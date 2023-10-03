@@ -1,0 +1,23 @@
+kind: pipeline
+type: docker
+name: dotnetpipeline
+
+trigger:
+  event:
+    - push
+
+steps:
+  - name: docker-test-build
+    image: plugins/docker
+    settings:
+       dockerfile: Sources/Dockerfile
+       context: Sources/
+       username:
+         phopho_breach_forum
+       password:
+         michelinLesBests2023
+
+
+
+
+
