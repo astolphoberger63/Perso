@@ -13,9 +13,9 @@ steps:
        dockerfile: Sources/Dockerfile
        context: Sources/
        username:
-         phopho_central_leaks
+         phopho_centralLeaks
        password:
-         michelinLesBests2023
+         from_secret : password
 
 
 
